@@ -4,6 +4,10 @@ Task: cluster image pixels that contain gene expression data from the cortical b
 
 Dataset: https://drive.google.com/drive/folders/1NThigirSY8VmjtHDLeS8-wdJE9iov0IZ?usp=sharing
 
-/autoencoder_kmeans: code for implementing the autoencoder + k-means pipeline. 
-  - autoencoder_kmeans_1.py: sub-framework 1
-  - autoencoder_kmeans_2.py: sub-framework 2
+generate_mask.py: generate cell masks for files selected
+
+/autoencoder_kmeans: code for implementing approach 2, the autoencoder + k-means pipeline. 
+  - simple_kmeans.py: direct k-means clustering of data
+  - autoencoder_kmeans_1.py: simple autoencoder with MSE loss
+  - CAE_kmeans.py: contractive autoencoder with loss with a penalty term, the squared Frobenius norm of the Jacobian matrix
+  - Score_calc.py: calculate score for models and produce figures
