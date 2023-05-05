@@ -11,3 +11,5 @@ generate_mask.py: generate cell masks for files selected
   - autoencoder_kmeans_1.py: simple autoencoder with MSE loss
   - CAE_kmeans.py: contractive autoencoder with loss with a penalty term, the squared Frobenius norm of the Jacobian matrix
   - Score_calc.py: calculate score for models and produce figures
+
+Attribution: the implementation of U-Net was modified from here https://github.com/milesial/Pytorch-UNet. All other code (training loop, processing methods, etc.) were our own. 
